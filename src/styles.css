@@ -1,0 +1,199 @@
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #696969;
+}
+
+.login-form,
+.register-form {
+  background: #333;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.login-header,
+.register-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-header h2,
+.register-header h2 {
+  margin-bottom: 10px;
+}
+
+.login-header div,
+.register-header div {
+  font-size: 0.8em;
+}
+
+.login-header a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 93%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+}
+
+.login-button,
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-options,
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.login-options label {
+  color: #fff;
+}
+
+.login-options a {
+  color: #ffa500;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.signup-link,
+.signin-link {
+  color: #ffa500;
+  cursor: pointer;
+}
+.signup-link:hover,
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+  background-color: #333;
+  margin-top: 3.5%;
+}
+
+.product-card {
+  width: 200px; /* O el tamaño que prefieras */
+  border: 1px solid #ddd; /* Un borde sutil, opcional */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
+  background: white;
+}
+
+.product-card img {
+  width: 100%; /* Hace que la imagen ocupe toda la anchura de la tarjeta */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 1em; /* Ajusta el tamaño de la fuente como prefieras */
+  color: #333; /* Color del texto */
+}
+
+.navbar {
+  background: #f0f3f5; /* Color de fondo de la barra de navegación */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Centrar la barra de búsqueda en la barra de navegación */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* O el ancho máximo que prefieras */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  padding-left: 40px; /* Espacio para el icono de búsqueda */
+  border: 2px solid transparent; /* Borde transparente para mantener el tamaño durante el focus */
+  border-radius: 30px; /* Bordes redondeados */
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
+}
+
+/* Ajuste de margen para el contenido debido a la navbar fija */
+.content {
+  margin-top: 70px; /* Ajusta a la altura de tu navbar */
+}
+
+.search-history {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-history li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.search-history li:hover {
+  background-color: #f0f0f0;
+}
